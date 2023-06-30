@@ -1,4 +1,4 @@
-package com.jontxu.EventManagement.data;
+package com.jontxu.EventManagement.data.Employee;
 
 public abstract class Employee {
     private final String name;

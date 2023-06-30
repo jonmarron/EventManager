@@ -1,4 +1,7 @@
-package com.jontxu.EventManagement.data;
+package com.jontxu.EventManagement.data.Event;
+
+import com.jontxu.EventManagement.data.Employee.Helper;
+import com.jontxu.EventManagement.data.Employee.Organiser;
 
 import java.util.List;
 import java.util.Map;
@@ -6,8 +9,8 @@ import java.util.stream.Collectors;
 
 public class Conference extends Event {
     private final Map<Guest, Boolean> guestsWithGoodieBag;
-    protected Conference(List<Guest> guests) {
-        super(guests);
+    protected Conference(List<Guest> guests, List<Helper> helpers, List<Organiser> organisers) {
+        super(guests, helpers, organisers);
         guestsWithGoodieBag = initializeGuestsWithGoodie();
     }
 
